@@ -1,0 +1,26 @@
+﻿<Window x:Class="ticTacToe.dialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ticTacToe"
+        xmlns:xctk = "http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="dialogWindow" Height="330" Width="410" WindowStartupLocation="CenterScreen">
+    <Canvas x:Name="c" Height="320" VerticalAlignment="Top" Margin="0,0,2,-21">
+        <Label x:Name="lb1" Content="Spieler 1:" Canvas.Top="21" FontSize="15" FontFamily="Verdana" Canvas.Left="74" RenderTransformOrigin="1.143,0.679"/>
+        <TextBox x:Name="tb_sp1" Height="25" TextWrapping="Wrap" Width="103" Canvas.Left="163" Canvas.Top="24" Text="spieler1" FontSize="15"/>
+        <Label x:Name="lb2" Content="Spieler 2:" Canvas.Top="53" FontSize="15" FontFamily="Verdana" Canvas.Left="74" RenderTransformOrigin="0.488,0.214"/>
+        <TextBox x:Name="tb_sp2" Height="25" TextWrapping="Wrap" Width="103" Canvas.Left="163" Canvas.Top="56" Text="spieler1" FontSize="15" RenderTransformOrigin="0.757,0.44"/>
+        <Label x:Name="lb3" Content="Anzahl Zeilen/ Spalten:" Canvas.Top="151" Height="29" RenderTransformOrigin="0.494,-1.069" FontSize="15" FontFamily="Verdana" Canvas.Left="5"/>
+        <Label x:Name="lb4" Content="Zeit:" Canvas.Top="120" Height="29" FontSize="15" FontFamily="Verdana" Canvas.Left="146"/>
+        <Button x:Name="bt_ok" Content="OK" Width="100" Canvas.Left="10" Canvas.Top="246" Click="Button_Click" IsDefault="True" Height="30" FontSize="15" FontFamily="Verdana"/>
+        <Button x:Name="bt_cancel" Content="CANCEL" Width="100" Canvas.Left="166" Canvas.Top="246" Click="bt_cancel_Click" IsCancel="True" Height="30" FontSize="15" FontFamily="Verdana" RenderTransformOrigin="0.47,0.833"/>
+        <xctk:ColorPicker x:Name="cp_sp1" Canvas.Top="23" Width="70" SelectedColor="Blue" Canvas.Left="271" FontSize="15"></xctk:ColorPicker>
+        <xctk:ColorPicker x:Name="cp_sp2" Canvas.Top="55" Width="70" SelectedColor="Red" Canvas.Left="271" RenderTransformOrigin="0.582,0.576" FontSize="15"/>
+        <xctk:ColorPicker x:Name="cp_fb3" Canvas.Top="191" Width="69" SelectedColor="White" Canvas.Left="197"></xctk:ColorPicker>
+        <xctk:IntegerUpDown x:Name="UDC_time" Canvas.Left="197" Canvas.Top="122" Width="69" DefaultValue="5" DisplayDefaultValueOnEmptyText="True" FontSize="15"/>
+        <xctk:IntegerUpDown x:Name="UDC_anzFeld" Canvas.Left="197" Canvas.Top="156" Minimum="1" Maximum="99" Width="69" DisplayDefaultValueOnEmptyText="True" DefaultValue="3" RenderTransformOrigin="0.502,1.75" FontSize="15"/>
+        <Label Content="Hintergrund Farbe:" Canvas.Top="185" RenderTransformOrigin="1.109,0.385" FontSize="15" FontFamily="Verdana" Canvas.Left="38"/>
+    </Canvas>
+</Window>
